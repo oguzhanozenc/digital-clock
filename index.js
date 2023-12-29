@@ -16,6 +16,8 @@ function updateClock() {
     ampmvalue = "PM";
   }
 
+  h = h < 10 ? "0" + h : h;
+
   hour.innerText = h;
   min.innerText = m;
   sec.innerText = s;
